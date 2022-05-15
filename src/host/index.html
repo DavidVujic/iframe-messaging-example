@@ -4,31 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
     <title>iframe messaging example</title>
-    <style>
-     body {
-         background-color: #231e1e;
-         color: silver;
-     }
-
-     main {
-         display: flex;
-         justify-content: center;     
-         overflow-y: auto;
-     }
-
-     iframe {
-	 height: 100%;
-	 width: 100%;
-     }
-    </style>
+    <link rel="stylesheet" href="../shared/css/style.css">
   </head>
-  <body>
+  <body class="host">
     <main>
-        <section>
-            <button id="send-button">Send message</button>
-        </section>
+
+      <section>
+        <h3>The Host</h3>
+        <button class="send-button" data-message="ping" data-iframe="main iframe">Send ping</button>
+      </section>
+
+      <section>
+        <span id="the-message"></span>
+      </section>
+
+      <section>
         <iframe src="http://localhost:8000/framed/hello.html" frameborder="0"></iframe>
+      </section>
+
     </main>
-    <script src="index.js"></script>
+    <script src="../shared/js/listen.js?v=1"></script>
+    <script src="../shared/js/send.js?v=1"></script>
   </body>
 </html>

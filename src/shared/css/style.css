@@ -1,0 +1,28 @@
+body {
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    color: silver;
+}
+
+body.host {
+    background-color: #231e1e;
+}
+
+body.framed {
+     background-color: black;
+ }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    overflow-y: auto;
+}
+
+main section {
+    margin-bottom: 10px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
