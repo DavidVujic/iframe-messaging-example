@@ -1,0 +1,16 @@
+{
+  "name": "iframe-messaging-example",
+  "version": "1.0.0",
+  "description": "Experimenting with messaging between a host and iframes",
+  "main": "index.js",
+  "scripts": {
+    "start": "python -m http.server -d src 8000"
+  },
+  "keywords": [
+    "iframe",
+    "javascript",
+    "html DOM API"
+  ],
+  "author": "David Vujic",
+  "license": "MIT"
+}
